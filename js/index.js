@@ -56,24 +56,21 @@ images[2].src = 'img/mid-page-accent.jpg'
 const newLink1 = document.createElement('a')
 const newLink2 = document.createElement('a')
 
-newLink1.textContent = 'Hi'
-newLink2.textContent = 'Hello'
-
 const nav = document.querySelector('nav')
-
-nav.append(newLink1)
-// nav.prepend(newLink2)
+nav.prepend(newLink2)
+nav.appendChild(newLink1)
 
 // Nav
 const navLinks = document.querySelectorAll('a')
 
-navLinks[0].textContent = 'Services'
-navLinks[1].textContent = 'Products'
-navLinks[2].textContent = 'Vision'
-navLinks[3].textContent = 'Features'
-navLinks[4].textContent = 'About'
-navLinks[5].textContent = 'Contact'
-
+navLinks[0].textContent = 'Hello'
+navLinks[1].textContent = 'Services'
+navLinks[2].textContent = 'Products'
+navLinks[3].textContent = 'Vision'
+navLinks[4].textContent = 'Features'
+navLinks[5].textContent = 'About'
+navLinks[6].textContent = 'Contact'
+navLinks[7].textContent = 'Hi'
 navLinks.forEach(link => {
   link.style.color = 'green'
 })
@@ -104,3 +101,9 @@ paras[5].innerHTML = '123 Way 456 Street <br> Somewhere, USA'
 paras[6].textContent = '1 (888) 888-8888'
 paras[7].textContent = 'sales@greatidea.io'
 paras[8].textContent = 'Copyright Great Idea! 2018'
+
+// Stretch Styling
+const header = document.querySelector('header')
+header.style.background = 'gold'
+header.style.padding = '2%'
+document.querySelector('body').style.background = 'royalBlue'
